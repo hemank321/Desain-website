@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="cssdesainbaru.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li onclick="showSection('about')">Tentang Saya</li>
+            <li onclick="showSection('portfolio')">Portofolio</li>
+            <li onclick="showSection('chat')">Chat</li>
+            <li onclick="logout()">Logout</li>
+        </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- TENTANG -->
+        <div id="about" class="section">
+    <h2>Tentang Saya</h2>
+
+    <input type="text" id="nama" placeholder="Masukkan nama">
+    <input type="text" id="kampus" placeholder="Masukkan kampus">
+    <input type="text" id="jurusan" placeholder="Masukkan jurusan">
+
+    <button onclick="simpanAbout()">Simpan</button>
+
+</div>
+
+        <!-- PORTFOLIO -->
+        <div id="portfolio" class="section" style="display:none;">
+            <h2>Portofolio</h2>
+
+            
+
+
+            <input type="file" id="upload" multiple>
+            <button onclick="uploadImage()">Upload</button>
+
+            <div id="gallery"></div>
+        </div>
+
+        <!-- CHAT -->
+        <div id="chat" class="section" style="display:none;">
+            <h2>Chat AI</h2>
+
+            <div id="chatBox"></div>
+
+            <input type="text" id="chatInput" placeholder="Tulis pesan...">
+            <button onclick="sendMessage()">Kirim</button>
+        </div>
+        
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        .promo {
+            height: 300px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            margin-bottom: 20px;
+
+            background: linear-gradient(270deg, #4facfe, #00f2fe, #43e97b);
+            background-size: 600% 600%;
+            animation: gradientMove 8s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% {background-position: 0%;}
+            50% {background-position: 100%;}
+            100% {background-position: 0%;}
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: white;
+            color: black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="promo">
+    <h1 id="typing"></h1>
+    <p>Website Portofolio Keren 🚀</p>
+    <button onclick="klik()">Klik Saya</button>
+</div>
+
+
+<!-- 🔥 STATISTIK -->
+<div class="stats">
+    <div class="card">🎨 <h2 id="totalKarya">0</h2><p>Karya</p></div>
+    <div class="card">👀 <h2>120</h2><p>Views</p></div>
+    <div class="card">💼 <h2>5</h2><p>Project</p></div>
+</div>
+
+<!-- 🔥 TENTANG SAYA -->
+<div class="about">
+    <h2>Tentang Saya</h2>
+    <table>
+        <tr><td>Nama</td><td>: Isi sendiri</td></tr>
+        <tr><td>Skill</td><td>: Design, UI/UX</td></tr>
+        <tr><td>Pengalaman</td><td>: Freelancer</td></tr>
+    </table>
+</div>
+
+<!-- 🔥 PORTOFOLIO -->
+<div class="portfolio">
+    <h2>Portofolio</h2>
+
+    <input type="file" id="upload">
+    <button onclick="uploadImage()">Upload</button>
+
+    <div id="gallery"></div>
+</div>
+
+<script>
+    // 🔥 TYPING EFFECT
+    let text = "Selamat Datang 👋";
+    let i = 0;
+
+    function typingEffect() {
+        if (i < text.length) {
+            document.getElementById("typing").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typingEffect, 50);
+        }
+    }
+
+    typingEffect();
+
+    // 🔥 BUTTON FUNCTION
+    function klik() {
+        alert("🔥 Tombol berhasil ditekan!");
+    }
+</script>
+
+</body>
+</html>
+
+</div>
+
+<script src="jvdesainbaru.js"></script>
+</body>
+</html>
